@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DevCard — Personal portfolio of Your Name, a web developer building delightful experiences on the web."
+    />
+    <title>Your Name — Web Developer</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <div class="container nav">
+        <a href="#" class="logo"> <span class="logo-dot"></span>devcard </a>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+            />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== HERO ===== -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">👋 Hi, I'm</p>
+            <h1>
+              Your Name —
+              <span class="gradient-text"
+                >building the web,<br />one pixel at a time.</span
+              >
+            </h1>
+            <p class="lead">
+              I'm a web developer passionate about clean code, thoughtful
+              design, and shipping things that matter. Currently exploring
+              AI-assisted development.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View my work</a>
+              <a href="assets/cv.pdf" class="btn btn-ghost" download
+                >Download CV</a
+              >
+            </div>
+            <div class="hero-stats">
+              <div><strong>5</strong><span>Days of marathon</span></div>
+              <div><strong>3+</strong><span>Projects shipped</span></div>
+              <div><strong>∞</strong><span>Curiosity</span></div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="avatar-wrap">
+              <img
+                src="assets/profile_pic.jpg"
+                alt="Portrait of Your Name"
+                class="avatar"
+              />
+              <div class="badge">Open to opportunities</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section id="about" class="section reveal">
+        <div class="container two-col">
+          <div>
+            <p class="section-label">About</p>
+            <h2>A bit about me</h2>
+          </div>
+          <div>
+            <p>
+              I recently completed an intensive 5-day coding marathon where I
+              learned HTML, CSS, JavaScript, Git &amp; GitHub, and prompt
+              engineering. I love turning ideas into real, usable products and
+              learning new things every single day.
+            </p>
+            <p>
+              When I'm not coding you'll find me [reading / hiking / playing
+              music / chasing curiosity]. Let's build something together.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SKILLS ===== -->
+      <section id="skills" class="section reveal">
+        <div class="container">
+          <p class="section-label">Toolbox</p>
+          <h2>Skills</h2>
+          <ul class="skills-grid">
+            <li><span class="skill-icon">🧱</span>HTML5</li>
+            <li><span class="skill-icon">🎨</span>CSS3</li>
+            <li><span class="skill-icon">⚡</span>JavaScript</li>
+            <li><span class="skill-icon">🌿</span>Git &amp; GitHub</li>
+            <li><span class="skill-icon">🤖</span>Prompt Engineering</li>
+            <li><span class="skill-icon">📱</span>Responsive Design</li>
+            <li><span class="skill-icon">🧠</span>Problem Solving</li>
+            <li><span class="skill-icon">🤝</span>Collaboration</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-label">Work</p>
+              <h2>Selected projects</h2>
+            </div>
+            <div class="filters" role="tablist" aria-label="Project filters">
+              <button class="filter active" data-filter="all">All</button>
+              <button class="filter" data-filter="web">Web</button>
+              <button class="filter" data-filter="js">JavaScript</button>
+              <button class="filter" data-filter="ai">AI</button>
+            </div>
+          </div>
+
+          <div class="projects-grid">
+            <article class="card" data-tags="web js">
+              <div class="card-media">
+                <img src="assets/project-1.jpg" alt="Project One screenshot" />
+              </div>
+              <div class="card-body">
+                <h3>Project One</h3>
+                <p>
+                  A short, punchy description of what this project does and why
+                  it's cool.
+                </p>
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <div class="card-links">
+                  <a href="#" target="_blank" rel="noopener">Live →</a>
+                  <a href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-tags="web ai">
+              <div class="card-media">
+                <img src="assets/project-2.jpg" alt="Project Two screenshot" />
+              </div>
+              <div class="card-body">
+                <h3>Project Two</h3>
+                <p>
+                  Built with AI pair-programming. Demonstrates prompt
+                  engineering in practice.
+                </p>
+                <div class="tags"><span>AI</span><span>Web</span></div>
+                <div class="card-links">
+                  <a href="#" target="_blank" rel="noopener">Live →</a>
+                  <a href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card" data-tags="js">
+              <div class="card-media">
+                <img
+                  src="assets/project-3.jpg"
+                  alt="Project Three screenshot"
+                />
+              </div>
+              <div class="card-body">
+                <h3>Project Three</h3>
+                <p>Tiny but mighty — a JS utility I built and use every day.</p>
+                <div class="tags"><span>JavaScript</span></div>
+                <div class="card-links">
+                  <a href="#" target="_blank" rel="noopener">Live →</a>
+                  <a href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="section reveal">
+        <div class="container contact">
+          <p class="section-label">Contact</p>
+          <h2>Let's build something together.</h2>
+          <p class="lead">
+            I'm open to internships, collaborations, and friendly hellos.
+          </p>
+          <a href="mailto:you@example.com" class="btn btn-primary big"
+            >Say hello →</a
+          >
+
+          <ul class="socials">
+            <li>
+              <a
+                href="https://github.com/your-username"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/your-handle"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/your-handle"
+                target="_blank"
+                rel="noopener"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="year"></span> Your Name. Built with ❤️ during the
+          ADTL Capstone.
+        </p>
+        <a href="#" class="to-top" aria-label="Back to top">↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
